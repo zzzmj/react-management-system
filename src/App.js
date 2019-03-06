@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react';
 
 class App extends Component {
     render() {
         return (
-            <div className="App">
-                <h1>hello</h1>
-            </div>
+            <Fragment>
+                {this.props.children}
+            </Fragment>
         )
     }
 }

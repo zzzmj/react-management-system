@@ -1,0 +1,26 @@
+@import '../../resource/default.less';
+
+html, body, #root {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    min-height: 100%;
+    .nav-left {
+        position: fixed;
+        z-index: 1;
+        min-width: 200px;
+        min-height: 100%;
+        background-color: #001529;;
+    }
+    .main {
+        flex: 1;
+        min-height: 100%;
+        background-color: @colorL;
+        padding-left: 200px;
+        .content {
+            margin: 25px;
+        }
+    }
+}
