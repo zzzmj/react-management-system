@@ -8,6 +8,7 @@ import Notices from './pages/ui/notices';
 import Messages from './pages/ui/messages';
 import Gallery from './pages/ui/gallery';
 import Tabs from './pages/ui/tabs';
+import Carousel from './pages/ui/carousel';
 import Admin from './admin'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Home from './pages/home';
@@ -29,6 +30,7 @@ class MyRouter extends Component {
                                 <Route path="/ui/messages" component={Messages}/>
                                 <Route path="/ui/tabs" component={Tabs}/>
                                 <Route path="/ui/gallery" component={Gallery}/>
+                                <Route path="/ui/carousel" component={Carousel}/>
                                 <Route path="/home" component={Home}/>
                                 <Route component={NoMatch}/>
                             </Switch>
