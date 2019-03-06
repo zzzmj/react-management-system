@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import App from './app'
 import Login from './pages/login'
 import Button from './pages/ui/buttons'
+import Modals from './pages/ui/modals';
 import Admin from './admin'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Home from './pages/home';
@@ -17,6 +18,7 @@ class MyRouter extends Component {
                         <Admin>
                             <Switch>
                                 <Route path="/ui/buttons" component={Button}/>
+                                <Route path="/ui/modals" component={Modals}/>
                                 <Route path="/home" component={Home}/>
                                 <Route component={NoMatch}/>
                             </Switch>
